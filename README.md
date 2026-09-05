@@ -7,6 +7,7 @@ A practical DevOps project that demonstrates an automated CI/CD pipeline for a P
 ## Architecture
 
 ```mermaid
+```
 
 ## Pipeline Stages
 
