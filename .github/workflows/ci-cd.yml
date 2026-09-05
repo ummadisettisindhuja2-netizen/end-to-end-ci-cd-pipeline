@@ -33,7 +33,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run automated tests
-        run: pytest -q
+        run: PYTHONPATH=. pytest -q
 
   security:
     name: Run security checks
