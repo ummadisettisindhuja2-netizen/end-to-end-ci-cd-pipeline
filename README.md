@@ -7,6 +7,13 @@ A practical DevOps project that demonstrates an automated CI/CD pipeline for a P
 ## Architecture
 
 ```mermaid
+flowchart TD
+    A[Developer pushes code] --> B[GitHub Actions]
+    B --> C[Automated tests]
+    B --> D[Security scans]
+    C --> E[Build Docker image]
+    D --> E
+    E --> F[Publish image to GHCR]
 ```
 
 ## Pipeline Stages
